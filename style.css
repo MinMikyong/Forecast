@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tenali Ramakrishna', sans-serif
+}
+*:focus{
+    outline: none;
+}
+
+*::placeholder{
+    font-size: 25px;
+}
+
+body{
+    height: 100vh;
+    background: url('./images/bgg.jpg');
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .container{
+    height: 80vh;
+    background: url('./images/4480535.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 5%;
+} */
+.card{
+    background: #ffffff4a;
+    padding: 3em;
+    height: 522px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    color: #3c5f51;
+    border-radius: 43px;
+    margin: 0 3%;
+    border: 6px solid white;
+    box-shadow: 0px 10px 10px;
+
+}
+
+.search-bar{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 2px solid #368665;
+    color: #368665;
+    font-size: 22px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.search button{
+    border: none;
+    background: #cce8dc;
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    padding: 0 18px;
+    padding-top: 9px;
+    box-shadow: 10px 10px 35px #92d2b7, -10px -10px 35px white;
+    margin: 20px 0;
+    border-radius: 11px;
+    color: #3c5f51;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background: #78b39b;
+    color: white;
+}
+
+.weather{
+    width: max-content;
+}
+
+.icon-box{
+    display: none;
+    background: #78b39b;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 30px #84bfa5, -20px -20px 40px white;
+}
+
+.temp{
+    cursor: pointer;
+}
+
+.text, .city, .temp{
+    display: none;
+}
+
+.text{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+
+
+@media (max-width: 375px){
+    .card{
+        width: 150px;
+        height: 450px;
+    }
+    .search-bar{
+        width: 150px;
+    }
+    .search button{
+        font-size: 25px;
+        margin: 15px 0;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .icon-box{
+        height: 80px;
+        width: 80px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .icon-box img{
+        width: 75px;
+    }
+    *::placeholder{
+        font-size: 17px ;
+    }
+}
